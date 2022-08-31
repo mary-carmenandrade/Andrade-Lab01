@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ouput en html 5</title>
+</head>
+<style>
+    body{
+        font-size: 22px;
+        background-color: rgba(157, 106, 159, 0.372);
+        text-align: center;
+        padding: 1em;
+    }
+</style>
+<body>
+    <form oninput="resultado.value=parseInt(x.value)*parseInt(y.value)">
+        <input type="number" name="x">
+        <input type="number" name="y">
+        <output name="resultado" for="x y"></output>
+    </form>
+</body>
+</html>

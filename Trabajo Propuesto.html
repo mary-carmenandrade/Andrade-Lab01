@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de autorización de viaje</title>
+</head>
+<style>
+    h2{
+        color:aliceblue;
+        font-size: 22px;
+        background-color: rgba(49, 125, 223, 0.718);
+        text-align: center;
+        border: 1px solid rgb(5, 39, 112);
+        padding: 1em;
+    }
+
+    body{
+        width: 1000px;
+        margin: 0px auto;
+        border: 1px solid black;
+        padding: 1em; 
+    }
+
+    h1{
+        font-size: 22px;
+        color:rgb(34,174,226);
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    label {
+        display: inline-block;
+        width: 222px;
+    }
+
+    #form-order{
+        column-count: 2;
+    }
+</style>
+
+
+<body>
+    <h2>Travel Authorization Form</h2>
+    <h1>Sección A: Información del cliente</h1>
+    <hr />
+    <form id="form-order1">
+        <p>
+            <label for="name">Cargo: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder="Ingrese el cargo"
+            autofocus
+            autocomplete
+            required> (Solo MAYÚCULAS, mínimo 4 caracteres y máximo 100)
+        </p>
+        <p>
+            <label for="name">Nombre: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            autofocus
+            autocomplete
+            required> (Solo MAYÚCULAS, mínimo 4 caracteres y máximo 100)
+        </p>
+        <p>
+            <label for="name">Primer Apellido: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            autofocus
+            autocomplete
+            required> (Solo MAYÚCULAS, mínimo 4 caracteres y máximo 100)
+        </p>
+        <p>
+            <label for="name">Segundo Apellido: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            autofocus
+            autocomplete
+            required> (Solo MAYÚCULAS, mínimo 4 caracteres y máximo 100)
+        </p>
+        <p>
+            <label for="name">Correo electrónico: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder="ejemplo@email.com"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for="name">Número de teléfono: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder="999999999"
+            autofocus
+            autocomplete
+            required> (9  valores numéricos)
+        </p>
+    </form>
+
+
+    <h1>Sección B: Información del viaje</h1>
+    <hr />
+    <form id="form-order">
+        <p>
+            <label for="name">Nombre de la aerolinea:</label>
+            <select name="select">
+                <option value="Seleccione una aerolinea" selected>Seleccione una aerolinea</option>
+                <option value="American Airlines">American Airlines</option>
+                <option value="Viva Air Colombia">Viva Air Colombia</option>
+                <option value="LATAM">LATAM</option>
+                <option value="Aeromexico">Aeromexico</option>
+                <option value="Spirit Airlines">Spirit Airlines</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="name">Destino: (Obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder
+            autofocus
+            autocomplete
+            required>(Solo texto)
+        </p>
+        <p>
+            <label for="fecha">Fecha de salida</label>
+            <input type="date" name="fecha" id="fecha"
+            placeholder>(Desde 01 de 2020)
+        </p>
+        <p>
+            <label for="fecha">Fecha de regreso</label>
+            <input type="date" name="fecha" id="fecha">(Desde 01 de 2020)
+        </p>
+        <p>
+            <label for="name">Coste estimado: </label>
+            <input type="text" name="name" id="name"
+            placeholder="números"
+            autofocus
+            autocomplete
+            required>(100 y 1000)
+        </p>
+        <p>
+            <label><input type="checkbox" name="envio" value="¿Incluye visita al cliente?" checked="">¿Incluye visita al cliente?</label>
+        </p>
+
+        <p>
+            <label for="name">Propósito del viaje:</label>
+            <input type="text" id="name" name="name" style="height:50px; width:400px;">
+        </p>
+            <input type="submit" name="Enviar">
+
+            
+        <p>
+            <p>
+                <legend>
+                    Gastos adicionales estimados:
+                </legend>
+
+                <p>
+                    <label for="Alquiler">Alquiler de coche </label>
+                    <input type="text" name="name" id="name"
+                    autofocus
+                    autocomplete
+                    required> (100 y 600)
+                </p>
+                <p>
+                    <label for="name">Hotel </label>
+                    <input type="text" name="name" id="name"
+                    autofocus
+                    autocomplete
+                    required>
+                </p>
+                <p>
+                    <label for="fecha">Comidas </label>
+                    <input type="text" name="name" id="name"
+                    placeholder=" solo valores numericos "
+                    autofocus
+                    autocomplete
+                    required>
+                </p>
+                <p>
+                    <label for="name">Total estimado </label>
+                    <input type="text" name="name" id="name"
+                    autofocus
+                    autocomplete
+                    required>
+                </p>
+            </p>
+
+            <p>
+                <legend>
+                    Método de pago utilizado:
+                </legend>
+                <p><label><input type="radio" name="prioridad" value="Metálico" checked="">Metálico</label></p>
+                <p><label><input type="radio" name="prioridad" value="Tarjeta de crédito">Tarjeta de crédito</label></p>
+                <p><label><input type="radio" name="prioridad" value="Cheque">Cheque</label></p>
+            </p>
+        </p>
+        
+    </form>
+</body>
+</html>
